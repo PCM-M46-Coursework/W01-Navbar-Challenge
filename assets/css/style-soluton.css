@@ -1,0 +1,50 @@
+/* Convert to flex-box */
+.flex-nav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Desktop Styles */
+@media all and (min-width: 1000px) {
+
+  /* Format nav bar items with a 4:1 ratio to social icons. */
+  .flex-nav li {
+    flex: 4;
+  }
+
+  /* Format social icons with a 1:4 ratio to nav bar items. */
+  .flex-nav li.social {
+    flex: 1;
+  }
+
+}
+
+/* Tablet Styles */
+@media all and (max-width: 1000px) {
+
+  /* Stretch nav bar items to fill half of the full width */
+  .flex-nav li {
+    flex: 50%;
+  }
+
+  /* Stretch nav bar items to fill a quarter of the full width */
+  .flex-nav li.social {
+    flex: 25%;
+  }
+
+}
+
+/* Mobile Styles */
+@media all and (max-width: 500px) {
+
+  /* Stretch nav bar items to fill the full width */
+  .flex-nav li {
+    flex: 100%;
+  }
+
+  /* Stretch nav bar items to fill a quarter of the full width */
+  .flex-nav li.social {
+    flex: 25%;
+  }
+
+}
