@@ -1,3 +1,8 @@
+/* Ensure the background gradient is full height. */
+body {
+  min-height: 100vh;
+}
+
 /* Convert to flex-box */
 .flex-nav ul {
   display: flex;
